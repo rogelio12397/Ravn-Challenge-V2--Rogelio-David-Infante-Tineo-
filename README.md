@@ -1,7 +1,3 @@
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Iniciamos la creación un proyecto react en este caso react-reto 
 
 npx create-react-app- react-reto
@@ -29,7 +25,7 @@ gql`query {allPeople (first: 5){totalCount people { name homeworld { name }  }  
 
 ##Descripcioón del Proyecto
 
-## Este proyecto sonsitio en la obteción de datos por medio de graphql trabajando con Apollo cliente 
+## Este proyecto consistio en la obteción de datos por medio de graphql trabajando con Apollo cliente 
 ## solo se llegó a realizar la carga de los 5 primeros datos de allPeople los datos on el nombre y el mundo natal de people
 ## además se logró que app sea responsive y que mostrara la carga, el error y los datos de acuerdo a la situación que se presente. 
 ## el diseño se baso en la estructura de figma junto con los codigos de colores presentados ahí
