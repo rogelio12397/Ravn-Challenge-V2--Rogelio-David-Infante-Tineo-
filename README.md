@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Iniciamos la creación un proyecto react en este caso react-reto 
 
-In the project directory, you can run:
+npx create-react-app- react-reto
 
-### `yarn start`
+## Configuración de Apollo
+## Primero ingresamos a su pagina oficial:
+https://www.apollographql.com/
+## Iniciamos sesión caso contrario se debe crear una cuenta
+## Luego hay un sección de New Granphql
+## colocamos un titulo elegimos development y en Endpoint colocamos la uri para obtener los datos de star war
+https://swapi-graphql.netlify.app/.netlify/functions/index
+## Finalmente create Graphql
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Para poder trabajar con la consulta de estar war se intala del cliente apollo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm install @apollo/client graphql
 
-### `yarn test`
+## se definio la uri que permitira la conexión con apollo client 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://swapi-graphql.netlify.app/.netlify/functions/index
 
-### `yarn build`
+## realizamos la query para la obtencion de los datos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+gql`query {allPeople (first: 5){totalCount people { name homeworld { name }  }  } } `
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##Descripcioón del Proyecto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Este proyecto sonsitio en la obteción de datos por medio de graphql trabajando con Apollo cliente 
+## solo se llegó a realizar la carga de los 5 primeros datos de allPeople los datos on el nombre y el mundo natal de people
+## además se logró que app sea responsive y que mostrara la carga, el error y los datos de acuerdo a la situación que se presente. 
+## el diseño se baso en la estructura de figma junto con los codigos de colores presentados ahí
+## en la carpeta evidencia se adjuntan las capturas de pantallas.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##
