@@ -1,13 +1,56 @@
 .load{
   padding-top: 18px;
-  padding-left: 120px;
-  padding-right: 127px;
+  padding-left: 114px;
   font-family: sans-serif;
   font-size: 17px;
   letter-spacing: 0.0125em;
   font-weight: bold;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 350px;
+  height: 848px;
+  left: 0px;
+  top: 52px;
+  position: absolute;
+  
 }
 
 #error{
   color: #EC5757;
+  padding-left: 80px;
+}
+
+.CharactersList{
+  
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  width: 350px;
+  height: 848px;
+  left: 0px;
+  top: 52px;
+}
+
+.data{
+  margin-left: 14.93px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+ 
+}
+
+#planet{
+  padding-bottom: 16px;
+  color: #828282;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+#name{
+  margin-top: 16px;
+  color: #333333;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+a#enlace{
+  color: #333333;
 }

@@ -4,15 +4,17 @@ import "./CharactersList.css";
 import spinner from './spinner.svg';
 
 const GET_CHARACTERS = gql`
- query{
-        allPeople(first: 5){
-          people {
-            id
-            nam
-            gender  
-          }
-        }
+ query {
+  allPeople (first: 5){
+    totalCount
+    people {
+      name
+      homeworld {
+        name
+      }
     }
+  }
+}
 `
 
 export default function CharactersList(){
@@ -25,16 +27,22 @@ export default function CharactersList(){
     // obj.error;
     // obj.loading;
     // obj.data;
+   
+   
     return (
         <div className="CharactersList">
         {data.allPeople.people.map((people) =>{
             return (
-            <div>
-                <h2>{people.name}</h2>
-                <h2>{people.gender}</h2>
-            </div>
-            );
-        })}
+              <a id="enlace" href="https:youtube.com">
+            <div className="data">
+                <p id="name">{people.name}</p>
+                <p id="planet">from {people.homeworld.name}</p>
+              </div>              
+              </a> 
+                         
+            );            
+        })
+        }
 
         </div>)
     
