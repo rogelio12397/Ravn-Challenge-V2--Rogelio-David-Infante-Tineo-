@@ -1,5 +1,9 @@
 .header{
     background: #121212;
-    font-size: 50px;
+    font-size: 17px;
     color: #fff;
+    padding-top: 16px; 
+    padding-left: 33px;
+    padding-bottom: 16px;
+    font-family: sans-serif;
 }

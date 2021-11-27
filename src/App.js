@@ -1,24 +1,25 @@
-
 import './App.css';
-import './components/common/header/Header.css'
 import CharacterList from './pages/CharactersList';
-import {Header} from './components/common'
+import {Header} from './components/common';
 
 function App() {
-  return (
+return (
+  <div>
     <div>
-      <div className="header">
-        <Header />
-      </div>
-      
-      <div className="App">
-
-
-      <CharacterList />
-
+      <Header />
     </div>
+
+    <div className="row">
+        <div className="col-log-4 App">
+          <CharacterList />
+        </div>
+
+        <div className="col-log-8">
+
+        </div>
     </div>
-  );
+  </div>
+);
 }
 
 export default App;

@@ -1,13 +1,14 @@
 import React from 'react';
 import {useQuery, gql} from "@apollo/client";
-import "./CharactersList.css"
+import "./CharactersList.css";
+import spinner from './spinner.svg';
 
 const GET_CHARACTERS = gql`
  query{
         allPeople(first: 5){
           people {
             id
-            name
+            nam
             gender  
           }
         }
@@ -19,11 +20,8 @@ export default function CharactersList(){
     const {error, data, loading} = useQuery(GET_CHARACTERS);
     console.log({error, data, loading})
 
-    if(loading) return <div id='carga'><div class="loadingio-spinner-spinner-85pfbjg48ls"><div class="ldio-5vs1ol7hre">
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    </div></div>loading </div>
-    
-    if(error) return <div>something wen wrong</div>
+    if(loading) return <div className="load"><img src={spinner} alt="img" height="35px"/> loading</div>
+    if(error) return <div id="error" className="load">Failed to Load Data</div>
     // obj.error;
     // obj.loading;
     // obj.data;
